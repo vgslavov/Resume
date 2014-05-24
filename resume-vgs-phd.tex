@@ -1,5 +1,6 @@
 % @brief    LaTeX2e Resume for Vasil G. Slavov
 \documentclass[margin,line]{resume}
+\usepackage{hyperref}
 
 %\def\Cplusplus{{\rm C\raise.5ex\hbox{\small ++}}}
 %\def\CSharp{{\rm C\raise.5ex\hbox{\small \#}}}
@@ -21,20 +22,22 @@
 
 % Research Interests
     \section{\mysidestyle Research\\Interests}
-    \begin{list2}
-        \item Using gossip-based algorithms for cardinality estimation of queries over semi-structured data
-        \item Scalable RDF query processing using a cloud infrastructure
-        \item RDF and XML data models in P2P networks
-    \end{list2}\vspace{-1.5mm}
+    \begin{list3}
+        \item Linked Data, Semantic Web, Big Data
+        \item Scalable RDF query processing using a cloud infrastructure, RDF quadruples
+        \item Cardinality estimation of queries over semi-structured data using gossip-based algorithms
+        \item RDF and XML data models in DHTs
+    \end{list3}\vspace{-1.5mm}
    
 % Education
     \section{\mysidestyle Education}
 
     \textbf{University of Missouri-Kansas City}, Kansas City, MO\\
-    \textsl{Ph.D. in Computer Science}, GPA 3.95 \hfill \textbf{Spring 2011 -- present}\vspace{-3mm}\\\vspace{-1mm}%
+    \textsl{Ph.D. Candidate in Computer Science}, GPA 3.95 \hfill \textbf{Spring 2011 -- present}\vspace{-3mm}\\\vspace{-1mm}%
     \vspace{1mm}
     \begin{list3}
-        \item Dissertation topic: Cloud-Driven RDF Query Processing Using Gossip-Based Algorithms
+        %\item Dissertation topic: Cardinality Estimation of Basic Graph Patterns in Federated SPARQL Queries
+        \item Dissertation topic: Fast Processing of SPARQL Queries on RDF Quadruples
         \item Advisor:  Professor Praveen Rao
     \end{list3}\vspace{-1.5mm}
     \textsl{M.S. in Computer Science}, GPA 3.95 \hfill \textbf{Spring 2008 -- Summer 2012}\vspace{-3mm}\\\vspace{-1mm}%
@@ -48,47 +51,60 @@
 
 % Honors and Awards
     \section{\mysidestyle Honors and\\Awards} 
-    \begin{list2}
-    \item Outstanding Ph.D. Student in Computer Science 2012, School of Computing and Engineering, UMKC
+    \begin{list3}
+    %\item School of Graduate Studies Travel Grant, 2014, UMKC
+    \item Outstanding Ph.D. Student in Computer Science 2012, School of Computing and Engineering, University of Missouri-Kansas City
     \item Balaji Krithikaivasan Memorial Student Travel Grant, CSEE, 2012, UMKC
     \item Dean's International Computing \& Engineering (DICE) award, SCE, UMKC
-    \item Computer Science Faculty Award for the Outstanding Junior and Senior in Computer Science, 2004 and 2005, WJC
+    \item Computer Science Faculty Award for the Outstanding Junior and Senior in Computer Science, 2004 and 2005, William Jewell College
     \item Phi Epsilon Honor Society, 2005
     \item Who's Who Among Students in American Universities and Colleges, 2005
-    \item Certificate of Achievement, Undergraduate Colloquium 2004, WJC
+    %\item Certificate of Achievement, Undergraduate Colloquium 2004, WJC
     \item Kappa Mu Epsilon National Mathematics Honor Society, 2003
     \item Alpha Lambda Delta National Academic Honor Society for Freshmen, 2001
     \item Dean's List (7 semesters), WJC
     %\item Azima Scholarship
-    \end{list2}
+    \end{list3}
 
 % Publications
     \section{\mysidestyle Publications}
 
-    \textbf{Vasil Slavov}, Praveen Rao, Srivenu Paturi, Tivakar Swami, Michael Barnes, Deepthi Rao and Raghuvarun Palvai.
-    ``A New Tool for Sharing and Querying of Clinical Documents Modeled Using HL7 Version 3 Standard."
-    To appear in \textsl{Computer Methods and Programs in Biomedicine Journal, Elsevier}, accepted July 2013.
-
-   \vspace{-2mm}
-    \textbf{Vasil Slavov} and Praveen Rao.
-    ``A Gossip-Based Approach for Internet-Scale Cardinality Estimation of XPath Queries over Distributed Semistructured Data."
-    To appear in \textsl{The International Journal on Very Large Databases} (VLDB Journal 2013), accepted March 2013.
+\textbf{Vasil Slavov}, Anas Katib, Praveen Rao, Srivenu Paturi, Dinesh Barenkala.
+    ``Fast Processing of SPARQL Queries on RDF Quadruples."
+    To appear in \textsl{Proceedings of the 17th International Workshop on the Web and Databases} (\textbf{WebDB 2014}), Snowbird, Utah, June 2014.
 
 \vspace{-2mm}
-    \textbf{Vasil Slavov}, Praveen Rao, Dinesh Barenkala and Srivenu Paturi.
+    \textbf{Vasil Slavov}, Anas Katib, and Praveen Rao.
+    ``Tool for Internet-Scale Cardinality Estimation of XPath Queries over Distributed Semistructured Data."
+    \textsl{Proceedings of the 30th IEEE International Conference on Data Engineering} (\textbf{ICDE 2014}), Chicago, IL, April 2014. (Demo)
+%\url{http://dx.doi.org/10.1109/ICDE.2014.6816758}
+
+\vspace{-2mm}
+    \textbf{Vasil Slavov} and Praveen Rao.
+    ``A Gossip-Based Approach for Internet-Scale Cardinality Estimation of XPath Queries over Distributed Semistructured Data."
+    \textsl{The International Journal on Very Large Databases} (\textbf{VLDB Journal 2014}), Volume 23, Issue 1, 2014, pp. 56--71. \url{http://dx.doi.org/10.1007/s00778-013-0314-1}
+    
+\vspace{-2mm}
+    \textbf{Vasil Slavov}, Praveen Rao, Srivenu Paturi, Tivakar Swami, Michael Barnes, Deepthi Rao, and Raghuvarun Palvai.
+    ``A New Tool for Sharing and Querying of Clinical Documents Modeled Using HL7 Version 3 Standard."
+   \textsl{Computer Methods and Programs in Biomedicine, Elsevier} (\textbf{CMPB Journal 2013}), Volume 112, Issue 3, December 2013, pp. 529--552. \url{http://dx.doi.org/10.1016/j.cmpb.2013.07.002}
+
+\vspace{-2mm}
+    \textbf{Vasil Slavov}, Praveen Rao, Dinesh Barenkala, and Srivenu Paturi.
     ``Performance of RDF Query Processing on the Intel Single-chip Cloud Computer (SCC)."
-    \textsl{Proceedings of the 6th Manycore Applications Research Community Symposium} (MARC 2012), Toulouse, France, July 2012, pp. 7-12.
+    \textsl{Proceedings of the 6th Many-core Applications Research Community Symposium} (\textbf{MARC 2012}), Toulouse, France, July 2012, pp. 7--12. \url{http://hal.archives-ouvertes.fr/hal-00718955}
     
 \vspace{-2mm}
     \textbf{Vasil Slavov} and Praveen Rao.
     ``Towards Internet-Scale Cardinality Estimation of XPath Queries over Distributed XML Data."
-    \textsl{Proceedings of the 6th International Workshop on Networking Meets Databases} (NetDB 2011), Athens, Greece, June 2011, pp. 1-8.
+    \textsl{Proceedings of the 6th International Workshop on Networking Meets Databases} (\textbf{NetDB 2011}), Athens, Greece, June 2011, pp. 1--8. \url{http://research.microsoft.com/en-us/um/people/srikanth/netdb11/netdb11papers/netdb11-final1.pdf}
 
 %\vspace{-2mm}
 %    Dipali Pal, Praveen Rao and \textbf{Vasil Slavov}.
 %    ``A New Signature Based Approach for Indexing and Querying of Graphs."
 %    \textsl{The VLDB Journal}. \textbf{[under review]}
-        
+
+\newpage        
 % Professional Experience
     \section{\mysidestyle Professional\\Experience}
     
@@ -97,38 +113,45 @@
     \employer{l}\location{r}\\
     \end{format}
 
-    \employer{\textsl{University of Missouri-Kansas City}}
-    \title{\textbf{Graduate Research Assistant}}
-    \location{Kansas City, MO}
-    \dates{\textbf{September 2011 -- present}}
-    \begin{position}\end{position}
-    
     \employer{\textsl{Bloomberg L.P.}}
-    \title{\textbf{R\&D Intern}}
+    \title{\textbf{R\&D Developer Intern}}
+    \location{New York, NY}
+    \dates{\textbf{May 2014 -- present}}
+    \begin{position}
+    \end{position}
+
+    \employer{\textsl{Bloomberg L.P.}}
+    \title{\textbf{R\&D Developer Intern}}
     \location{New York, NY}
     \dates{\textbf{May 2013 -- August 2013}}
     \begin{position}
 
     In R\&D Transactional Applications, Fixed Income Electronic Trading team
-    %\begin{list2}
-    %\item Evaluated log analytics solutions and developed a Kibana module using AngularJS and ElasticSearch
-    %\item Developed an automated testing suite for transactional applications in Python
-    %\end{list2}
+    \begin{list3}
+    \item Developed and evaluated log analytics solutions using NoSQL databases
+    \item Developed an automated testing suite for transactional applications in Python
+    \end{list3}
     \end{position}
     
-    \newpage    
+    \employer{\textsl{University of Missouri-Kansas City}}
+    \title{\textbf{Graduate Research Assistant}}
+    \location{Kansas City, MO}
+    \dates{\textbf{September 2011 -- present}}
+    \begin{position}\end{position}
+
     \employer{\textsl{Kansas City Art Institute}}
-    \title{\textbf{Network Systems Analyst}}
+    %\title{\textbf{Network Systems Analyst}}
+    \title{\textbf{Network and Systems Administrator}}
     \location{Kansas City, MO}
     \dates{\textbf{July 2006 -- August 2011}}
     \begin{position}
     \vspace{-2mm}
-    \begin{list2}
-    \item Responsible for all servers and network equipment
-    \item Migrated all network equipment from Cisco to 3Com
-    \item Migrated from MS Exchange to Google Apps
-    \item Set up and maintained: NAS, VoIP, Wireless, Backup, Virtualization, QoS, Network security
-    \end{list2}
+    %\begin{list3}
+    %\item Responsible for all servers and network equipment
+    %\item Migrated all network equipment from Cisco to 3Com
+    %\item Migrated from Microsoft Exchange to Google Apps
+    %\item Set up and maintained: NAS, VoIP, Wireless, Backup, Virtualization, QoS, Security
+    %\end{list3}
     \end{position}
 
     \employer{\textsl{William Jewell College}}
@@ -150,19 +173,22 @@
 
     \textbf{Languages}: C++, C, Python, shell scripting, JavaScript, Regular Expressions, C\#, MPI, \LaTeXe\\
     \textbf{Cloud Platforms/Distributed Networks}: Amazon Elastic Compute Cloud (EC2), IBM SmartCloud Enterprise, PlanetLab\\
-    \textbf{Frameworks/Engines}: Distributed Hash Tables (Chord), ElasticSearch, AngularJS, Hadoop\\
-    \textbf{Tools}: GDB, Valgrind, CVS, git\\
+    \textbf{Frameworks/Engines}: ElasticSearch, Hadoop, AngularJS, Distributed Hash Tables (Chord)\\
+    \textbf{Tools}: git, GDB, Valgrind, CVS\\
     \textbf{Operating Systems}: {\sc UNIX}/Linux, Mac OS X Server, Windows Server
     
 % Projects
     \section{\mysidestyle Technical Experience}
-    %\textbf{Automated testing suite} (2013). \textsl{Python, comdb2, BAS}. Developed an automated testing suite for transactional applications in Python by replaying production trades.
+    \textbf{RIQ: RDF Indexing on Quadruples} (2013 -- 2014). \textsl{C++, Dablooms, Raptor2, LSH}. Implemented and evaluated a decrease-and-conquer strategy for fast processing of SPARQL queries on very large RDF quadruple datasets  (over a billion quads) using Counting Bloom Filters and Locality Sensitive Hashing.
     
-    %\vspace{-2mm}
-    %\textbf{Log analytics} (2013). \textsl{AngularJS, ElasticSearch, Kibana, Logstash}. Evaluated log analytics solutions and developed a transaction (Splunk-like) module for Kibana in AngularJS.
+    \vspace{-2mm}
+    \textbf{Automated testing suite} (2013). \textsl{Python}. Developed an automated testing suite in Python for replaying production trades of transactional applications.
+    
+   \vspace{-2mm}
+    \textbf{Log analytics} (2013). \textsl{AngularJS, ElasticSearch, Kibana, Logstash}. Evaluated log analytics solutions and developed a transaction (Splunk-like) module for Kibana in AngularJS.
 
-    %\vspace{-2mm}    
-    \textbf{XGossip} (2010 - 2012). \textsl{C++, Sfslite, Chord DHT, Amazon EC2}. Implemented and evaluated a novel gossip algorithm for estimating the number of XML documents that contain a match for an XPath query in a large-scale network in the presence of churn and failures.
+    \vspace{-2mm}    
+    \textbf{XGossip} (2010 -- 2013). \textsl{C++, Sfslite, LSH, Chord DHT, Amazon EC2}. Implemented and evaluated a novel gossip algorithm for estimating the number of XML documents that contain a match for an XPath query in a large-scale network in the presence of churn and failures.
 
 \vspace{-2mm}
     \textbf{RDF query processing on Intel SCC} (2011). \textsl{MPICH, C}. Evaluated large-scale RDF query processing on the 48-core Intel Single-chip Cloud Computer (SCC) using task and data parallelism.
@@ -179,8 +205,8 @@
 \vspace{-2mm}
     \textbf{P2P file system} (2008). \textsl{C++, Chord DHT, Linux, PlanetLab}. Designed, implemented, and evaluated a distributed file system using the Chord DHT framework.
 
-\vspace{-2mm}
-    \textbf{Web server} (2008). \textsl{C, TCP, Linux}. Designed and implemented a lightweight web server.
+%\vspace{-2mm}
+ %   \textbf{Web server} (2008). \textsl{C, TCP, Linux}. Designed and implemented a lightweight web server.
     
 \vspace{-2mm}
     \textbf{Comparison of the Performance Characteristics of the OpenBSD Stateful Packet Filter (PF) and Microsoft Internet Security and Acceleration (ISA) Server} (2004). Undergraduate Colloquium, William Jewell College.
@@ -190,20 +216,22 @@
 
 %\vspace{-2mm}
  %  \textbf{Sentinel} (2003). \textsl{C, Linux}. Designed and developed a magnetic card reader client-server application for the Computer Science Lab, William Jewell College.
-    
+
+\newpage
 % Talks
     \section{\mysidestyle Talks}
     \begin{list2}
     \item Presentations
     \begin{list3}
-    \item Performance of RDF Query Processing on the Intel SCC. The 6th Manycore Applications Research Community (MARC) Symposium, Toulouse, France, July 19, 2012.
+    \item Tool for Internet-Scale Cardinality Estimation of XPath Queries over Distributed Semistructured Data. The 30th IEEE International Conference on Data Engineering (ICDE), Chicago, IL, April 3, 2014.
+    \item Performance of RDF Query Processing on the Intel SCC. The 6th Many-core Applications Research Community (MARC) Symposium, Toulouse, France, July 19, 2012.
     \item Internet-Scale Cardinality Estimation of XPath Queries over Distributed XML Data. UMKC CSEE Seminar Series, April 2, 2012.
     \end{list3}
     \item Guest Lectures
     \begin{list3}
     \item Data Structures course, UMKC, Fall 2013
-    \item Introduction to Database Management Systems course, UMKC, Spring 2013
-    \item Advanced Operating Systems course, UMKC, Fall 2010 and Fall 2011
+    \item Introduction to Database Management Systems course, UMKC, Spring 2013 and Fall 2013
+    \item Advanced Operating Systems course, UMKC, Fall 2010, 2011, and 2013
     \end{list3}
     \end{list2}
 
@@ -212,7 +240,7 @@
     \begin{list2}
     \item External reviewer
     \begin{list3}
-    \item International Conference on Database and Expert Systems Applications (DEXA) 2011 - 2013
+    \item International Conference on Database and Expert Systems Applications (DEXA) 2011 - 2014
     \end{list3}
     \item Organizer for School of Computing and Engineering E-Week Quiz Contest, UMKC, 2012
     \end{list2}
